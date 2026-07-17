@@ -485,3 +485,89 @@ body {
         font-size: 10px;
     }
 }
+.language-switch{
+    display:flex;
+    justify-content:flex-end;
+    gap:8px;
+    margin-top:12px;
+    margin-bottom:6px;
+}
+
+.lang{
+    background:none;
+    border:none;
+    color:#9a9a9a;
+    font-size:12px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.lang.active{
+    color:var(--blue);
+}
+.hero {
+    position: relative;
+}
+
+.language-switch {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.lang {
+    appearance: none;
+    border: none;
+    padding: 2px 0;
+
+    background: transparent;
+    color: rgba(46, 53, 140, 0.5);
+
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+
+    cursor: pointer;
+}
+
+.lang.active {
+    color: var(--blue);
+    font-weight: 800;
+}
+
+.language-separator {
+    color: rgba(46, 53, 140, 0.3);
+    font-size: 9px;
+}
+
+.lang:hover {
+    color: var(--blue);
+}
+
+.loading-error {
+    padding: 24px 0;
+    color: var(--grey);
+    font-size: 12px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .language-switch {
+        top: 7px;
+        right: 10px;
+        gap: 4px;
+    }
+
+    .lang {
+        font-size: 8px;
+    }
+
+    .language-separator {
+        font-size: 8px;
+    }
+}
